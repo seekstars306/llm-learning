@@ -67,6 +67,7 @@ export function LoginPage() {
         <div className="auth-hint">
           🔑 系统内置管理员：账号 <code>admin</code> · 初始密码 <code>admin123</code>
         </div>
+        <div className="auth-version">LLM 修炼之路 v{__APP_VERSION__}</div>
       </div>
     </div>
   )
