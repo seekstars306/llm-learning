@@ -49,6 +49,16 @@ export function BlockRenderer({ block, lessonId }) {
           <code>{block.code}</code>
         </pre>
       )
+    case 'example':
+      return (
+        <div className="example-card">
+          <div className="ex-title">✏️ {block.title || '算一遍：用真实数字走一遍'}</div>
+          <ol className="ex-steps">
+            {block.steps.map((s, i) => <li key={i}><Md text={s} /></li>)}
+          </ol>
+          {block.result && <div className="ex-result"><Md text={block.result} /></div>}
+        </div>
+      )
     case 'demo': {
       const Comp = getDemo(block.id)
       if (!Comp) return null

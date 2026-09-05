@@ -175,6 +175,8 @@ button { font-family: inherit; cursor: pointer; }
 .callout.warn .co-title { color: #b45309; }
 .callout.story { background: #f0f7ff; border-color: #2563eb; }
 .callout.story .co-title { color: #1d4ed8; }
+.callout.qa { background: #fffbeb; border-color: #d97706; }
+.callout.qa .co-title { color: #b45309; }
 
 /* 公式块 */
 .formula-card {
@@ -301,6 +303,20 @@ input[type='range'] { accent-color: var(--accent); width: 150px; }
 }
 .done-btn:hover { filter: brightness(1.08); }
 .done-btn.is-done { background: var(--green-soft); color: #047857; border: 1.5px solid var(--green); }
+
+/* 算例卡片：用真实数字一步步算 */
+.example-card {
+  background: #f4fbf7; border: 1px solid #cdeede; border-left: 4px solid #10b981;
+  border-radius: 12px; padding: 15px 18px;
+}
+.example-card .ex-title { font-weight: 700; font-size: 13.5px; color: #047857; margin-bottom: 9px; }
+.example-card .ex-steps { margin: 0; padding-left: 22px; display: grid; gap: 6px; }
+.example-card .ex-steps li { font-size: 14px; color: var(--text-2); line-height: 1.8; }
+.example-card .ex-steps li::marker { color: #10b981; font-weight: 700; }
+.example-card .ex-result {
+  margin-top: 10px; padding: 9px 13px; background: #fff; border-radius: 9px;
+  border: 1px dashed #9fd8b8; font-size: 14px; color: var(--text);
+}
 
 /* 术语表 */
 .gloss-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 13px; margin-top: 22px; }

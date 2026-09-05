@@ -6,6 +6,7 @@ const KIND_META = {
   tip: { icon: '💡', label: '小贴士' },
   warn: { icon: '⚠️', label: '注意' },
   story: { icon: '📖', label: '背景故事' },
+  qa: { icon: '❓', label: '自问自答' },
 }
 
 export function Callout({ kind = 'tip', title, children }) {
